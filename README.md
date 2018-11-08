@@ -3,7 +3,7 @@
 
 ### This website is an end-to-end e-commerce website. So there is a lot of back and forth between server and client, lots of validations built into it to give you a complete experience to practice the scenarios you might find in real time projects.
 
-# Below are the screenschots of the website  :+1:
+# Below are the screenshots of the website  :+1:
 
 ![capture -1](https://user-images.githubusercontent.com/41640976/48216760-9267f780-e3ab-11e8-821e-1a1c8ce8e5e8.JPG)
 
