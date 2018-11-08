@@ -23,3 +23,6 @@
 ![capture - 6](https://user-images.githubusercontent.com/41640976/48216890-effc4400-e3ab-11e8-9c23-a4bf6b34c283.JPG)
 
 
+## Biswajit Satapathy :+1:
+### Check my blog : https://medium.com/@b7satapathy  for detail description. 
+### Linked In     : https://www.linkedin.com/in/biswajitsatapathy/    
