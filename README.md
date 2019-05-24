@@ -1,4 +1,4 @@
-# End-to-End-Framework-From-Scratch
+# Selenium TestNg Framework
 ## I am using seleniumframework.com Demo Site (URL :- http://automationpractice.com) to create this end to end Framework. This website is simulated as an end-to-end e-commerce website to practice.
 
 ### This website is an end-to-end e-commerce website. So there is a lot of back and forth between server and client, lots of validations built into it to give you a complete experience to practice the scenarios you might find in real time projects.
