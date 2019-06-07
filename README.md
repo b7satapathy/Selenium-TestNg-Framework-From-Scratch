@@ -24,5 +24,5 @@
 
 
 ## Biswajit Satapathy :+1:
-### Check my blog : https://medium.com/@b7satapathy  for detail description. 
+
 ### Linked In     : https://www.linkedin.com/in/biswajitsatapathy/    
