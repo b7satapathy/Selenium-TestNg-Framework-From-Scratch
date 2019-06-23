@@ -35,14 +35,14 @@
 ![capture - 6](https://user-images.githubusercontent.com/41640976/48216890-effc4400-e3ab-11e8-9c23-a4bf6b34c283.JPG)
 
 
-## Code Snippets
+## Code Snippets Screenshots
 
 ![Capture_1](https://user-images.githubusercontent.com/41640976/59974461-22b91c80-95ca-11e9-8427-ae7ffd5cae42.JPG)
 
 
 ![Capture_2](https://user-images.githubusercontent.com/41640976/59974471-2f3d7500-95ca-11e9-8717-5161c56cd40d.JPG)
 
-## Extent Report
+## Extent Report Screenshots
 
 ![Capture_3](https://user-images.githubusercontent.com/41640976/59974474-395f7380-95ca-11e9-9691-16fee89f56af.JPG)
 
