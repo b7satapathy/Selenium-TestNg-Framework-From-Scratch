@@ -9,9 +9,14 @@
     <classes>
       <class name="com.qa.testCases.HomePageTest">
         <methods>
+          <include name="mouseHoverAndClickOnDressesButton"/>
+          <include name="searchAText"/>
+          <include name="gotoCartPage"/>
           <include name="initializeBrowser"/>
-          <include name="serachBar"/>
+          <include name="goToSignInPage"/>
+          <include name="mouseHoverAndClickOnTopsButton"/>
           <include name="tearDown"/>
+          <include name="gotoContactUsPage"/>
         </methods>
       </class> <!-- com.qa.testCases.HomePageTest -->
     </classes>

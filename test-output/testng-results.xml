@@ -1,25 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="21991" started-at="2019-06-18T17:41:22Z" finished-at="2019-06-18T17:41:44Z">
+  <suite name="Suite" duration-ms="52438" started-at="2019-06-23T09:09:55Z" finished-at="2019-06-23T09:10:48Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="21991" started-at="2019-06-18T17:41:22Z" finished-at="2019-06-18T17:41:44Z">
+    <test name="Test" duration-ms="52438" started-at="2019-06-23T09:09:55Z" finished-at="2019-06-23T09:10:48Z">
       <class name="com.qa.testCases.HomePageTest">
-        <test-method status="PASS" signature="initializeBrowser()[pri:0, instance:com.qa.testCases.HomePageTest@66a3ffec]" name="initializeBrowser" is-config="true" duration-ms="10788" started-at="2019-06-18T17:41:22Z" finished-at="2019-06-18T17:41:33Z">
+        <test-method status="PASS" signature="initializeBrowser()[pri:0, instance:com.qa.testCases.HomePageTest@66a3ffec]" name="initializeBrowser" is-config="true" duration-ms="12733" started-at="2019-06-23T09:09:55Z" finished-at="2019-06-23T09:10:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method status="PASS" signature="serachBar()[pri:0, instance:com.qa.testCases.HomePageTest@66a3ffec]" name="serachBar" duration-ms="5255" started-at="2019-06-18T17:41:33Z" finished-at="2019-06-18T17:41:38Z">
+        <test-method status="PASS" signature="goToSignInPage()[pri:0, instance:com.qa.testCases.HomePageTest@66a3ffec]" name="goToSignInPage" duration-ms="7998" started-at="2019-06-23T09:10:08Z" finished-at="2019-06-23T09:10:16Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- serachBar -->
-        <test-method status="PASS" signature="contactUs()[pri:0, instance:com.qa.testCases.HomePageTest@66a3ffec]" name="contactUs" duration-ms="5245" started-at="2019-06-18T17:41:38Z" depends-on-methods="com.qa.testCases.HomePageTest.serachBar" finished-at="2019-06-18T17:41:43Z">
+        </test-method> <!-- goToSignInPage -->
+        <test-method status="PASS" signature="searchAText()[pri:0, instance:com.qa.testCases.HomePageTest@66a3ffec]" name="searchAText" duration-ms="5782" started-at="2019-06-23T09:10:16Z" depends-on-methods="com.qa.testCases.HomePageTest.goToSignInPage" finished-at="2019-06-23T09:10:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- contactUs -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testCases.HomePageTest@66a3ffec]" name="tearDown" is-config="true" duration-ms="671" started-at="2019-06-18T17:41:43Z" finished-at="2019-06-18T17:41:44Z">
+        </test-method> <!-- searchAText -->
+        <test-method status="PASS" signature="gotoContactUsPage()[pri:0, instance:com.qa.testCases.HomePageTest@66a3ffec]" name="gotoContactUsPage" duration-ms="4411" started-at="2019-06-23T09:10:22Z" depends-on-methods="com.qa.testCases.HomePageTest.searchAText" finished-at="2019-06-23T09:10:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gotoContactUsPage -->
+        <test-method status="PASS" signature="gotoCartPage()[pri:0, instance:com.qa.testCases.HomePageTest@66a3ffec]" name="gotoCartPage" duration-ms="5877" started-at="2019-06-23T09:10:26Z" depends-on-methods="com.qa.testCases.HomePageTest.gotoContactUsPage" finished-at="2019-06-23T09:10:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gotoCartPage -->
+        <test-method status="PASS" signature="mouseHoverAndClickOnTopsButton()[pri:0, instance:com.qa.testCases.HomePageTest@66a3ffec]" name="mouseHoverAndClickOnTopsButton" duration-ms="7030" started-at="2019-06-23T09:10:32Z" depends-on-methods="com.qa.testCases.HomePageTest.gotoCartPage" finished-at="2019-06-23T09:10:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mouseHoverAndClickOnTopsButton -->
+        <test-method status="PASS" signature="mouseHoverAndClickOnDressesButton()[pri:0, instance:com.qa.testCases.HomePageTest@66a3ffec]" name="mouseHoverAndClickOnDressesButton" duration-ms="7523" started-at="2019-06-23T09:10:39Z" depends-on-methods="com.qa.testCases.HomePageTest.mouseHoverAndClickOnTopsButton" finished-at="2019-06-23T09:10:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mouseHoverAndClickOnDressesButton -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testCases.HomePageTest@66a3ffec]" name="tearDown" is-config="true" duration-ms="1025" started-at="2019-06-23T09:10:47Z" finished-at="2019-06-23T09:10:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

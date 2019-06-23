@@ -18,20 +18,48 @@ public class HomePageTest extends TestBase{
 	
 	HomePage home;
 	
-	
 	@Test(alwaysRun=true)
-	public void serachBar() {
+	public void goToSignInPage() {
+		home= new HomePage();
+		assertEquals(home.clickOnSignInButton(), "Login - My Store");
+		assertEquals(home.returnToHomePage(), "My Store");
+	}
+	
+	@Test(dependsOnMethods= {"goToSignInPage"},alwaysRun=true)
+	public void searchAText() {
 		home= new HomePage();
 		assertEquals(home.enterTextInSearchbar(), "Search - My Store");
 		assertEquals(home.returnToHomePage(), "My Store");
 	}
 	
-	@Test(dependsOnMethods= {"serachBar"}, alwaysRun=true)
-	public void contactUs() {
+	@Test(dependsOnMethods= {"searchAText"}, alwaysRun=true)
+	public void gotoContactUsPage() {
 		home= new HomePage();
 		assertEquals(home.clickOnContactUsButton(), "Contact us - My Store");
 		assertEquals(home.returnToHomePage(), "My Store");
 	}
+	
+	@Test(dependsOnMethods= {"gotoContactUsPage"}, alwaysRun=true)
+	public void gotoCartPage() {
+		home= new HomePage();
+		assertEquals(home.clickOnCartButton(), "Order - My Store");
+		assertEquals(home.returnToHomePage(), "My Store");
+	}
+	
+	@Test(dependsOnMethods= {"gotoCartPage"}, alwaysRun=true)
+	public void mouseHoverAndClickOnTopsButton() {
+		home= new HomePage();
+		assertEquals(home.mouseHoverToWomenTabAndClickOnTops(), "Tops - My Store");
+		assertEquals(home.returnToHomePage(), "My Store");
+	}
+	
+	@Test(dependsOnMethods= {"mouseHoverAndClickOnTopsButton"}, alwaysRun=true)
+	public void mouseHoverAndClickOnDressesButton() {
+		home= new HomePage();
+		assertEquals(home.mouseHoverToWomenTabAndClickOnDresses(), "Dresses - My Store");
+		assertEquals(home.returnToHomePage(), "My Store");
+	}
+	
 	
 	
 	
