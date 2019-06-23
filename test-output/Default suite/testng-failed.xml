@@ -5,9 +5,12 @@
     <classes>
       <class name="com.qa.testCases.HomePageTest">
         <methods>
-          <include name="scrollDown"/>
+          <include name="searchAText"/>
+          <include name="gotoCartPage"/>
           <include name="initializeBrowser"/>
+          <include name="goToSignInPage"/>
           <include name="tearDown"/>
+          <include name="gotoContactUsPage"/>
         </methods>
       </class> <!-- com.qa.testCases.HomePageTest -->
     </classes>
