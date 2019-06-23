@@ -35,6 +35,26 @@
 ![capture - 6](https://user-images.githubusercontent.com/41640976/48216890-effc4400-e3ab-11e8-9c23-a4bf6b34c283.JPG)
 
 
-## Biswajit Satapathy :+1:
+## Code Snippets
 
-### Linked In     : https://www.linkedin.com/in/biswajitsatapathy/    
+![Capture_1](https://user-images.githubusercontent.com/41640976/59974461-22b91c80-95ca-11e9-8427-ae7ffd5cae42.JPG)
+
+
+![Capture_2](https://user-images.githubusercontent.com/41640976/59974471-2f3d7500-95ca-11e9-8717-5161c56cd40d.JPG)
+
+## Extent Report
+
+![Capture_3](https://user-images.githubusercontent.com/41640976/59974474-395f7380-95ca-11e9-9691-16fee89f56af.JPG)
+
+
+![Capture_4](https://user-images.githubusercontent.com/41640976/59974478-3fedeb00-95ca-11e9-90e8-86021c357cc4.JPG)
+
+
+
+### Linked In        : https://www.linkedin.com/in/biswajitsatapathy/   
+### Appium Project   : https://github.com/b7satapathy/Appium_TestNG_Framework
+ 
+ 
+### Biswajit Satapathy :+1:
+### b7satapathy@gmail.com
+
