@@ -60,6 +60,48 @@ public class HomePageTest extends TestBase{
 		assertEquals(home.returnToHomePage(), "My Store");
 	}
 	
+	@Test(dependsOnMethods= {"mouseHoverAndClickOnDressesButton"}, alwaysRun=true)
+	public void mouseHoverAndClickOnCasualDresses() {
+		home= new HomePage();
+		assertEquals(home.mouseHoverToDressesTabAndClickOnCasualDresses(), "Casual Dresses - My Store");
+		assertEquals(home.returnToHomePage(), "My Store");
+	}
+	
+	@Test(dependsOnMethods= {"mouseHoverAndClickOnCasualDresses"}, alwaysRun=true)
+	public void mouseHoverAndClickOnEveningDresses() {
+		home= new HomePage();
+		assertEquals(home.mouseHoverToDressesTabAndClickOnEveningDresses(), "Evening Dresses - My Store");
+		assertEquals(home.returnToHomePage(), "My Store");
+	}
+	
+	@Test(dependsOnMethods= {"mouseHoverAndClickOnEveningDresses"}, alwaysRun=true)
+	public void mouseHoverAndClickOnSummerDresses() {
+		home= new HomePage();
+		assertEquals(home.mouseHoverToDressesTabAndClickOnSummerDresses(), "Summer Dresses - My Store");
+		assertEquals(home.returnToHomePage(), "My Store");
+	}
+	
+	@Test(dependsOnMethods= {"mouseHoverAndClickOnSummerDresses"}, alwaysRun=true)
+	public void clickOnTshirtsTab() {
+		home= new HomePage();
+		assertEquals(home.ClickOntShirtsTab(), "T-shirts - My Store");
+		assertEquals(home.returnToHomePage(), "My Store");
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 	
 	
 	

@@ -36,7 +36,20 @@ public class HomePage extends TestBase{
 	@FindBy(xpath="//div[@id='block_top_menu']/ul/li/ul/li[2]//a[contains(text(),'Dresses')]")
 	WebElement DRESSESColumnButton;
 	
+	@FindBy(xpath="//div[@id='block_top_menu']/ul/li[2]//a[contains(text(),'Dresses')]")
+	WebElement dressesTab;
 	
+	@FindBy(xpath="//div[@id='block_top_menu']/ul/li[2]/ul/li//a[contains(text(),'Casual Dresses')]")
+	WebElement casualDresses;
+	
+	@FindBy(xpath="//div[@id='block_top_menu']/ul/li[2]/ul/li[2]//a[contains(text(),'Evening Dresses')]")
+	WebElement eveningDresses;
+	
+	@FindBy(xpath="//div[@id='block_top_menu']/ul/li[2]/ul/li[3]//a[contains(text(),'Summer Dresses')]")
+	WebElement summerDresses;
+	
+	@FindBy(xpath="//div[@id='block_top_menu']/ul/li[3]//a[contains(text(),'T-shirts')]")
+	WebElement tShirts;
 	
 	
 	public HomePage() {
@@ -81,9 +94,27 @@ public class HomePage extends TestBase{
 		return driver.getTitle();
 	}
 	
+	public String mouseHoverToDressesTabAndClickOnCasualDresses() {
+		Actions a= new Actions(driver);
+		a.moveToElement(dressesTab).moveToElement(casualDresses).click().build().perform();
+		return driver.getTitle();
+	}
 	
+	public String mouseHoverToDressesTabAndClickOnEveningDresses() {
+		Actions a= new Actions(driver);
+		a.moveToElement(dressesTab).moveToElement(eveningDresses).click().build().perform();
+		return driver.getTitle();
+	}
 	
+	public String mouseHoverToDressesTabAndClickOnSummerDresses() {
+		Actions a= new Actions(driver);
+		a.moveToElement(dressesTab).moveToElement(summerDresses).click().build().perform();
+		return driver.getTitle();
+	}
 	
-	
-	
+	public String ClickOntShirtsTab() {
+		Actions a= new Actions(driver);
+		tShirts.click();
+		return driver.getTitle();
+	}
 }

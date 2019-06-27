@@ -12,7 +12,7 @@
 	
 	Framework Pattern : Page Object Pattern with Page factory
 	
-	Reporting Library : Extent Report
+	Reporting Library : Extent Report 2.0
 	
 
 ## Below are the screenshots of the website  :+1:
@@ -56,5 +56,5 @@
  
  
 ### Biswajit Satapathy :+1:
-### b7satapathy@gmail.com
+### Contact Email    : b7satapathy@gmail.com
 
