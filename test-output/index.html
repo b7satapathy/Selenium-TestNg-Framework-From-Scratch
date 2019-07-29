@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,12 +49,12 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>F:\Z_Personal_Projects\Z_eclipse_workspace\Selenium-TestNg-Framework-From-Scratch\testng.xml</span>
+                    <span>F:\Z_Personal_Projects\Z_eclipse_workspace\Selenium-TestNg-Framework-From-Scratch\src\main\resources\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-Suite">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,41 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods,   6 passed</span>
+                    <span class="method-stats">20 methods, 5 failed,   15 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testCases.HomePageTest" hash-for-method="mouseHoverAndClickOnCasualDresses">mouseHoverAndClickOnCasualDresses</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testCases.HomePageTest" hash-for-method="mouseHoverAndClickOnDressesButton">mouseHoverAndClickOnDressesButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testCases.HomePageTest" hash-for-method="mouseHoverAndClickOnEveningDresses">mouseHoverAndClickOnEveningDresses</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testCases.HomePageTest" hash-for-method="mouseHoverAndClickOnSummerDresses">mouseHoverAndClickOnSummerDresses</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testCases.HomePageTest" hash-for-method="mouseHoverAndClickOnTopsButton">mouseHoverAndClickOnTopsButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +136,27 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testCases.HomePageTest" hash-for-method="clickOnTshirtsTab">clickOnTshirtsTab</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testCases.HomePageTest" hash-for-method="clickOnTshirtsTab">clickOnTshirtsTab</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testCases.HomePageTest" hash-for-method="goToSignInPage">goToSignInPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testCases.HomePageTest" hash-for-method="goToSignInPage">goToSignInPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testCases.HomePageTest" hash-for-method="gotoCartPage">gotoCartPage</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -117,12 +171,37 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testCases.HomePageTest" hash-for-method="gotoContactUsPage">gotoContactUsPage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testCases.HomePageTest" hash-for-method="mouseHoverAndClickOnCasualDresses">mouseHoverAndClickOnCasualDresses</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testCases.HomePageTest" hash-for-method="mouseHoverAndClickOnDressesButton">mouseHoverAndClickOnDressesButton</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testCases.HomePageTest" hash-for-method="mouseHoverAndClickOnEveningDresses">mouseHoverAndClickOnEveningDresses</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testCases.HomePageTest" hash-for-method="mouseHoverAndClickOnSummerDresses">mouseHoverAndClickOnSummerDresses</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testCases.HomePageTest" hash-for-method="mouseHoverAndClickOnTopsButton">mouseHoverAndClickOnTopsButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.qa.testCases.HomePageTest" hash-for-method="searchAText">searchAText</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -142,6 +221,200 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qa.testCases.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="mouseHoverAndClickOnCasualDresses">
+                  </a> <!-- mouseHoverAndClickOnCasualDresses -->
+                  <span class="method-name">mouseHoverAndClickOnCasualDresses</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: TypeError: rect is undefined
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;BISWAJIT&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 11708, moz:profile: C:\Users\ASUS\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 407f378a-2d46-4893-b227-11aa749487b1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at com.qa.pages.HomePage.mouseHoverToDressesTabAndClickOnCasualDresses(HomePage.java:138)
+	at com.qa.testCases.HomePageTest.mouseHoverAndClickOnCasualDresses(HomePageTest.java:65)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mouseHoverAndClickOnDressesButton">
+                  </a> <!-- mouseHoverAndClickOnDressesButton -->
+                  <span class="method-name">mouseHoverAndClickOnDressesButton</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Dresses - My Store] but found [My Store]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.qa.testCases.HomePageTest.mouseHoverAndClickOnDressesButton(HomePageTest.java:59)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mouseHoverAndClickOnEveningDresses">
+                  </a> <!-- mouseHoverAndClickOnEveningDresses -->
+                  <span class="method-name">mouseHoverAndClickOnEveningDresses</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Evening Dresses - My Store] but found [My Store]
+	at org.testng.Assert.fail(Assert.java:96)
+	at org.testng.Assert.failNotEquals(Assert.java:776)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+	at org.testng.Assert.assertEquals(Assert.java:118)
+	at org.testng.Assert.assertEquals(Assert.java:453)
+	at org.testng.Assert.assertEquals(Assert.java:463)
+	at com.qa.testCases.HomePageTest.mouseHoverAndClickOnEveningDresses(HomePageTest.java:75)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mouseHoverAndClickOnSummerDresses">
+                  </a> <!-- mouseHoverAndClickOnSummerDresses -->
+                  <span class="method-name">mouseHoverAndClickOnSummerDresses</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: TypeError: rect is undefined
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;BISWAJIT&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 11708, moz:profile: C:\Users\ASUS\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 407f378a-2d46-4893-b227-11aa749487b1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at com.qa.pages.HomePage.mouseHoverToDressesTabAndClickOnSummerDresses(HomePage.java:150)
+	at com.qa.testCases.HomePageTest.mouseHoverAndClickOnSummerDresses(HomePageTest.java:81)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mouseHoverAndClickOnTopsButton">
+                  </a> <!-- mouseHoverAndClickOnTopsButton -->
+                  <span class="method-name">mouseHoverAndClickOnTopsButton</span>
+                  <div class="stack-trace">org.openqa.selenium.WebDriverException: TypeError: rect is undefined
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;BISWAJIT&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_191&apos;
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 11708, moz:profile: C:\Users\ASUS\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 407f378a-2d46-4893-b227-11aa749487b1
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+	at java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+	at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+	at com.qa.pages.HomePage.mouseHoverToWomenTabAndClickOnTops(HomePage.java:126)
+	at com.qa.testCases.HomePageTest.mouseHoverAndClickOnTopsButton(HomePageTest.java:49)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.lang.Thread.run(Unknown Source)
+
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -150,9 +423,37 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="clickOnTshirtsTab">
+                  </a> <!-- clickOnTshirtsTab -->
+                  <span class="method-name">clickOnTshirtsTab</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickOnTshirtsTab">
+                  </a> <!-- clickOnTshirtsTab -->
+                  <span class="method-name">clickOnTshirtsTab</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="goToSignInPage">
                   </a> <!-- goToSignInPage -->
                   <span class="method-name">goToSignInPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="goToSignInPage">
+                  </a> <!-- goToSignInPage -->
+                  <span class="method-name">goToSignInPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="gotoCartPage">
+                  </a> <!-- gotoCartPage -->
+                  <span class="method-name">gotoCartPage</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -171,9 +472,37 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="gotoContactUsPage">
+                  </a> <!-- gotoContactUsPage -->
+                  <span class="method-name">gotoContactUsPage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mouseHoverAndClickOnCasualDresses">
+                  </a> <!-- mouseHoverAndClickOnCasualDresses -->
+                  <span class="method-name">mouseHoverAndClickOnCasualDresses</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="mouseHoverAndClickOnDressesButton">
                   </a> <!-- mouseHoverAndClickOnDressesButton -->
                   <span class="method-name">mouseHoverAndClickOnDressesButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mouseHoverAndClickOnEveningDresses">
+                  </a> <!-- mouseHoverAndClickOnEveningDresses -->
+                  <span class="method-name">mouseHoverAndClickOnEveningDresses</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="mouseHoverAndClickOnSummerDresses">
+                  </a> <!-- mouseHoverAndClickOnSummerDresses -->
+                  <span class="method-name">mouseHoverAndClickOnSummerDresses</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -190,27 +519,37 @@
                   <span class="method-name">searchAText</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchAText">
+                  </a> <!-- searchAText -->
+                  <span class="method-name">searchAText</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">F:\Z_Personal_Projects\Z_eclipse_workspace\Selenium-TestNg-Framework-From-Scratch\testng.xml</span>
+            <span class="header-content">F:\Z_Personal_Projects\Z_eclipse_workspace\Selenium-TestNg-Framework-From-Scratch\src\main\resources\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;com.qa.analyzer.Transformer&quot;/&gt;
-    &lt;listener class-name=&quot;com.qa.utility.ExtentReport&quot;/&gt;
-  &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;3&quot; name=&quot;Suite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;3&quot; name=&quot;Test ran in Chrome Browser&quot; parallel=&quot;methods&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.qa.testCases.HomePageTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Test --&gt;
+  &lt;/test&gt; &lt;!-- Test ran in Chrome Browser --&gt;
+  &lt;test thread-count=&quot;5&quot; verbose=&quot;3&quot; name=&quot;Test ran in Firefox Browser&quot; parallel=&quot;methods&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;firefox&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qa.testCases.HomePageTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test ran in Firefox Browser --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -222,7 +561,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (1 class)</span>
+                <span class="test-name">Test ran in Chrome Browser (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">Test ran in Firefox Browser (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -248,36 +590,92 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(6);
+data.addRows(20);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'goToSignInPage')
+data.setCell(0, 1, 'mouseHoverAndClickOnCasualDresses')
 data.setCell(0, 2, 'com.qa.testCases.HomePageTest')
-data.setCell(0, 3, 7998);
+data.setCell(0, 3, 9227);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'mouseHoverAndClickOnDressesButton')
+data.setCell(1, 1, 'mouseHoverAndClickOnTopsButton')
 data.setCell(1, 2, 'com.qa.testCases.HomePageTest')
-data.setCell(1, 3, 7523);
+data.setCell(1, 3, 7612);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'mouseHoverAndClickOnTopsButton')
+data.setCell(2, 1, 'mouseHoverAndClickOnDressesButton')
 data.setCell(2, 2, 'com.qa.testCases.HomePageTest')
-data.setCell(2, 3, 7030);
+data.setCell(2, 3, 7495);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'gotoCartPage')
+data.setCell(3, 1, 'goToSignInPage')
 data.setCell(3, 2, 'com.qa.testCases.HomePageTest')
-data.setCell(3, 3, 5877);
+data.setCell(3, 3, 7276);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'searchAText')
+data.setCell(4, 1, 'gotoCartPage')
 data.setCell(4, 2, 'com.qa.testCases.HomePageTest')
-data.setCell(4, 3, 5782);
+data.setCell(4, 3, 6908);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'gotoContactUsPage')
+data.setCell(5, 1, 'goToSignInPage')
 data.setCell(5, 2, 'com.qa.testCases.HomePageTest')
-data.setCell(5, 3, 4411);
+data.setCell(5, 3, 6706);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'mouseHoverAndClickOnDressesButton')
+data.setCell(6, 2, 'com.qa.testCases.HomePageTest')
+data.setCell(6, 3, 6666);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'mouseHoverAndClickOnSummerDresses')
+data.setCell(7, 2, 'com.qa.testCases.HomePageTest')
+data.setCell(7, 3, 6150);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'searchAText')
+data.setCell(8, 2, 'com.qa.testCases.HomePageTest')
+data.setCell(8, 3, 6109);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'searchAText')
+data.setCell(9, 2, 'com.qa.testCases.HomePageTest')
+data.setCell(9, 3, 6087);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'gotoContactUsPage')
+data.setCell(10, 2, 'com.qa.testCases.HomePageTest')
+data.setCell(10, 3, 6070);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'gotoCartPage')
+data.setCell(11, 2, 'com.qa.testCases.HomePageTest')
+data.setCell(11, 3, 5927);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'mouseHoverAndClickOnEveningDresses')
+data.setCell(12, 2, 'com.qa.testCases.HomePageTest')
+data.setCell(12, 3, 5728);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'gotoContactUsPage')
+data.setCell(13, 2, 'com.qa.testCases.HomePageTest')
+data.setCell(13, 3, 5548);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'clickOnTshirtsTab')
+data.setCell(14, 2, 'com.qa.testCases.HomePageTest')
+data.setCell(14, 3, 5420);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'clickOnTshirtsTab')
+data.setCell(15, 2, 'com.qa.testCases.HomePageTest')
+data.setCell(15, 3, 5361);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'mouseHoverAndClickOnEveningDresses')
+data.setCell(16, 2, 'com.qa.testCases.HomePageTest')
+data.setCell(16, 3, 5189);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'mouseHoverAndClickOnTopsButton')
+data.setCell(17, 2, 'com.qa.testCases.HomePageTest')
+data.setCell(17, 3, 672);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'mouseHoverAndClickOnCasualDresses')
+data.setCell(18, 2, 'com.qa.testCases.HomePageTest')
+data.setCell(18, 3, 403);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'mouseHoverAndClickOnSummerDresses')
+data.setCell(19, 2, 'com.qa.testCases.HomePageTest')
+data.setCell(19, 3, 357);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 38 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -305,36 +703,110 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.testCases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">initializeBrowser</span>
+                <span class="method-name">setUpTest(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-test before">
+                <span class="method-name">setUpTest(firefox)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">goToSignInPage</span>
-                <span class="method-start">12764 ms</span>
+                <span class="method-start">18955 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">goToSignInPage</span>
+                <span class="method-start">23292 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">searchAText</span>
-                <span class="method-start">20771 ms</span>
+                <span class="method-start">26237 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">searchAText</span>
+                <span class="method-start">30003 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">gotoContactUsPage</span>
-                <span class="method-start">26556 ms</span>
+                <span class="method-start">32349 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">gotoContactUsPage</span>
+                <span class="method-start">36104 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">gotoCartPage</span>
-                <span class="method-start">30970 ms</span>
+                <span class="method-start">38430 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">gotoCartPage</span>
+                <span class="method-start">41659 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">mouseHoverAndClickOnTopsButton</span>
-                <span class="method-start">36849 ms</span>
+                <span class="method-start">45340 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">mouseHoverAndClickOnTopsButton</span>
+                <span class="method-start">47599 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">mouseHoverAndClickOnDressesButton</span>
+                <span class="method-start">48308 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">mouseHoverAndClickOnDressesButton</span>
-                <span class="method-start">43882 ms</span>
+                <span class="method-start">52955 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">mouseHoverAndClickOnCasualDresses</span>
+                <span class="method-start">54976 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">mouseHoverAndClickOnEveningDresses</span>
+                <span class="method-start">55381 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">mouseHoverAndClickOnCasualDresses</span>
+                <span class="method-start">60454 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">mouseHoverAndClickOnSummerDresses</span>
+                <span class="method-start">60573 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickOnTshirtsTab</span>
+                <span class="method-start">60933 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">51407 ms</span>
+                <span class="method-start">66302 ms</span>
+              </div> <!-- configuration-test after -->
+              <div class="test-method">
+                <span class="method-name">mouseHoverAndClickOnEveningDresses</span>
+                <span class="method-start">69682 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">mouseHoverAndClickOnSummerDresses</span>
+                <span class="method-start">75412 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">clickOnTshirtsTab</span>
+                <span class="method-start">81564 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-test after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">86986 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

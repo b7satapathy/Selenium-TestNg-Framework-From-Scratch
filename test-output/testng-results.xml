@@ -1,45 +1,323 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
+<testng-results skipped="0" failed="5" ignored="0" total="20" passed="15">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="52438" started-at="2019-06-23T09:09:55Z" finished-at="2019-06-23T09:10:48Z">
+  <suite name="Suite" duration-ms="87871" started-at="2019-07-29T18:24:48Z" finished-at="2019-07-29T18:26:16Z">
     <groups>
     </groups>
-    <test name="Test" duration-ms="52438" started-at="2019-06-23T09:09:55Z" finished-at="2019-06-23T09:10:48Z">
+    <test name="Test ran in Firefox Browser" duration-ms="69142" started-at="2019-07-29T18:24:48Z" finished-at="2019-07-29T18:25:57Z">
       <class name="com.qa.testCases.HomePageTest">
-        <test-method status="PASS" signature="initializeBrowser()[pri:0, instance:com.qa.testCases.HomePageTest@66a3ffec]" name="initializeBrowser" is-config="true" duration-ms="12733" started-at="2019-06-23T09:09:55Z" finished-at="2019-06-23T09:10:08Z">
+        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.qa.testCases.HomePageTest@59494225]" name="setUpTest" is-config="true" duration-ms="23283" started-at="2019-07-29T18:24:48Z" finished-at="2019-07-29T18:25:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- initializeBrowser -->
-        <test-method status="PASS" signature="goToSignInPage()[pri:0, instance:com.qa.testCases.HomePageTest@66a3ffec]" name="goToSignInPage" duration-ms="7998" started-at="2019-06-23T09:10:08Z" finished-at="2019-06-23T09:10:16Z">
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="goToSignInPage()[pri:0, instance:com.qa.testCases.HomePageTest@59494225]" name="goToSignInPage" duration-ms="6706" started-at="2019-07-29T18:25:12Z" finished-at="2019-07-29T18:25:18Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- goToSignInPage -->
-        <test-method status="PASS" signature="searchAText()[pri:0, instance:com.qa.testCases.HomePageTest@66a3ffec]" name="searchAText" duration-ms="5782" started-at="2019-06-23T09:10:16Z" depends-on-methods="com.qa.testCases.HomePageTest.goToSignInPage" finished-at="2019-06-23T09:10:22Z">
+        <test-method status="PASS" signature="searchAText()[pri:0, instance:com.qa.testCases.HomePageTest@59494225]" name="searchAText" duration-ms="6087" started-at="2019-07-29T18:25:18Z" depends-on-methods="com.qa.testCases.HomePageTest.goToSignInPage" finished-at="2019-07-29T18:25:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- searchAText -->
-        <test-method status="PASS" signature="gotoContactUsPage()[pri:0, instance:com.qa.testCases.HomePageTest@66a3ffec]" name="gotoContactUsPage" duration-ms="4411" started-at="2019-06-23T09:10:22Z" depends-on-methods="com.qa.testCases.HomePageTest.searchAText" finished-at="2019-06-23T09:10:26Z">
+        <test-method status="PASS" signature="gotoContactUsPage()[pri:0, instance:com.qa.testCases.HomePageTest@59494225]" name="gotoContactUsPage" duration-ms="5548" started-at="2019-07-29T18:25:24Z" depends-on-methods="com.qa.testCases.HomePageTest.searchAText" finished-at="2019-07-29T18:25:30Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gotoContactUsPage -->
-        <test-method status="PASS" signature="gotoCartPage()[pri:0, instance:com.qa.testCases.HomePageTest@66a3ffec]" name="gotoCartPage" duration-ms="5877" started-at="2019-06-23T09:10:26Z" depends-on-methods="com.qa.testCases.HomePageTest.gotoContactUsPage" finished-at="2019-06-23T09:10:32Z">
+        <test-method status="PASS" signature="gotoCartPage()[pri:0, instance:com.qa.testCases.HomePageTest@59494225]" name="gotoCartPage" duration-ms="5927" started-at="2019-07-29T18:25:30Z" depends-on-methods="com.qa.testCases.HomePageTest.gotoContactUsPage" finished-at="2019-07-29T18:25:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gotoCartPage -->
-        <test-method status="PASS" signature="mouseHoverAndClickOnTopsButton()[pri:0, instance:com.qa.testCases.HomePageTest@66a3ffec]" name="mouseHoverAndClickOnTopsButton" duration-ms="7030" started-at="2019-06-23T09:10:32Z" depends-on-methods="com.qa.testCases.HomePageTest.gotoCartPage" finished-at="2019-06-23T09:10:39Z">
+        <test-method status="FAIL" signature="mouseHoverAndClickOnTopsButton()[pri:0, instance:com.qa.testCases.HomePageTest@59494225]" name="mouseHoverAndClickOnTopsButton" duration-ms="672" started-at="2019-07-29T18:25:36Z" depends-on-methods="com.qa.testCases.HomePageTest.gotoCartPage" finished-at="2019-07-29T18:25:37Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[TypeError: rect is undefined
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BISWAJIT', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 11708, moz:profile: C:\Users\ASUS\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 407f378a-2d46-4893-b227-11aa749487b1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: TypeError: rect is undefined
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BISWAJIT', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 11708, moz:profile: C:\Users\ASUS\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 407f378a-2d46-4893-b227-11aa749487b1
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+at com.qa.pages.HomePage.mouseHoverToWomenTabAndClickOnTops(HomePage.java:126)
+at com.qa.testCases.HomePageTest.mouseHoverAndClickOnTopsButton(HomePageTest.java:49)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mouseHoverAndClickOnTopsButton -->
-        <test-method status="PASS" signature="mouseHoverAndClickOnDressesButton()[pri:0, instance:com.qa.testCases.HomePageTest@66a3ffec]" name="mouseHoverAndClickOnDressesButton" duration-ms="7523" started-at="2019-06-23T09:10:39Z" depends-on-methods="com.qa.testCases.HomePageTest.mouseHoverAndClickOnTopsButton" finished-at="2019-06-23T09:10:47Z">
+        <test-method status="FAIL" signature="mouseHoverAndClickOnDressesButton()[pri:0, instance:com.qa.testCases.HomePageTest@59494225]" name="mouseHoverAndClickOnDressesButton" duration-ms="6666" started-at="2019-07-29T18:25:37Z" depends-on-methods="com.qa.testCases.HomePageTest.mouseHoverAndClickOnTopsButton" finished-at="2019-07-29T18:25:43Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Dresses - My Store] but found [My Store]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Dresses - My Store] but found [My Store]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.qa.testCases.HomePageTest.mouseHoverAndClickOnDressesButton(HomePageTest.java:59)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- mouseHoverAndClickOnDressesButton -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testCases.HomePageTest@66a3ffec]" name="tearDown" is-config="true" duration-ms="1025" started-at="2019-06-23T09:10:47Z" finished-at="2019-06-23T09:10:48Z">
+        <test-method status="FAIL" signature="mouseHoverAndClickOnCasualDresses()[pri:0, instance:com.qa.testCases.HomePageTest@59494225]" name="mouseHoverAndClickOnCasualDresses" duration-ms="403" started-at="2019-07-29T18:25:43Z" depends-on-methods="com.qa.testCases.HomePageTest.mouseHoverAndClickOnDressesButton" finished-at="2019-07-29T18:25:44Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[TypeError: rect is undefined
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BISWAJIT', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 11708, moz:profile: C:\Users\ASUS\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 407f378a-2d46-4893-b227-11aa749487b1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: TypeError: rect is undefined
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BISWAJIT', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 11708, moz:profile: C:\Users\ASUS\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 407f378a-2d46-4893-b227-11aa749487b1
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+at com.qa.pages.HomePage.mouseHoverToDressesTabAndClickOnCasualDresses(HomePage.java:138)
+at com.qa.testCases.HomePageTest.mouseHoverAndClickOnCasualDresses(HomePageTest.java:65)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mouseHoverAndClickOnCasualDresses -->
+        <test-method status="FAIL" signature="mouseHoverAndClickOnEveningDresses()[pri:0, instance:com.qa.testCases.HomePageTest@59494225]" name="mouseHoverAndClickOnEveningDresses" duration-ms="5189" started-at="2019-07-29T18:25:44Z" depends-on-methods="com.qa.testCases.HomePageTest.mouseHoverAndClickOnCasualDresses" finished-at="2019-07-29T18:25:49Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Evening Dresses - My Store] but found [My Store]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Evening Dresses - My Store] but found [My Store]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at com.qa.testCases.HomePageTest.mouseHoverAndClickOnEveningDresses(HomePageTest.java:75)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mouseHoverAndClickOnEveningDresses -->
+        <test-method status="FAIL" signature="mouseHoverAndClickOnSummerDresses()[pri:0, instance:com.qa.testCases.HomePageTest@59494225]" name="mouseHoverAndClickOnSummerDresses" duration-ms="357" started-at="2019-07-29T18:25:49Z" depends-on-methods="com.qa.testCases.HomePageTest.mouseHoverAndClickOnEveningDresses" finished-at="2019-07-29T18:25:49Z">
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[TypeError: rect is undefined
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BISWAJIT', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 11708, moz:profile: C:\Users\ASUS\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 407f378a-2d46-4893-b227-11aa749487b1]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: TypeError: rect is undefined
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'BISWAJIT', ip: '192.168.1.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_191'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 67.0.4, javascriptEnabled: true, moz:accessibilityChecks: false, moz:buildID: 20190619235627, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 11708, moz:profile: C:\Users\ASUS\AppData\Local..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: 407f378a-2d46-4893-b227-11aa749487b1
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.perform(RemoteWebDriver.java:618)
+at org.openqa.selenium.interactions.Actions$BuiltAction.perform(Actions.java:639)
+at com.qa.pages.HomePage.mouseHoverToDressesTabAndClickOnSummerDresses(HomePage.java:150)
+at com.qa.testCases.HomePageTest.mouseHoverAndClickOnSummerDresses(HomePageTest.java:81)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+at java.lang.Thread.run(Unknown Source)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mouseHoverAndClickOnSummerDresses -->
+        <test-method status="PASS" signature="clickOnTshirtsTab()[pri:0, instance:com.qa.testCases.HomePageTest@59494225]" name="clickOnTshirtsTab" duration-ms="5361" started-at="2019-07-29T18:25:49Z" depends-on-methods="com.qa.testCases.HomePageTest.mouseHoverAndClickOnSummerDresses" finished-at="2019-07-29T18:25:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnTshirtsTab -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testCases.HomePageTest@59494225]" name="tearDown" is-config="true" duration-ms="2821" started-at="2019-07-29T18:25:55Z" finished-at="2019-07-29T18:25:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.testCases.HomePageTest -->
-    </test> <!-- Test -->
+    </test> <!-- Test ran in Firefox Browser -->
+    <test name="Test ran in Chrome Browser" duration-ms="87871" started-at="2019-07-29T18:24:48Z" finished-at="2019-07-29T18:26:16Z">
+      <class name="com.qa.testCases.HomePageTest">
+        <test-method status="PASS" signature="setUpTest(java.lang.String)[pri:0, instance:com.qa.testCases.HomePageTest@548e7350]" name="setUpTest" is-config="true" duration-ms="18891" started-at="2019-07-29T18:24:48Z" finished-at="2019-07-29T18:25:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpTest -->
+        <test-method status="PASS" signature="goToSignInPage()[pri:0, instance:com.qa.testCases.HomePageTest@548e7350]" name="goToSignInPage" duration-ms="7276" started-at="2019-07-29T18:25:07Z" finished-at="2019-07-29T18:25:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- goToSignInPage -->
+        <test-method status="PASS" signature="searchAText()[pri:0, instance:com.qa.testCases.HomePageTest@548e7350]" name="searchAText" duration-ms="6109" started-at="2019-07-29T18:25:15Z" depends-on-methods="com.qa.testCases.HomePageTest.goToSignInPage" finished-at="2019-07-29T18:25:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchAText -->
+        <test-method status="PASS" signature="gotoContactUsPage()[pri:0, instance:com.qa.testCases.HomePageTest@548e7350]" name="gotoContactUsPage" duration-ms="6070" started-at="2019-07-29T18:25:21Z" depends-on-methods="com.qa.testCases.HomePageTest.searchAText" finished-at="2019-07-29T18:25:27Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gotoContactUsPage -->
+        <test-method status="PASS" signature="gotoCartPage()[pri:0, instance:com.qa.testCases.HomePageTest@548e7350]" name="gotoCartPage" duration-ms="6908" started-at="2019-07-29T18:25:27Z" depends-on-methods="com.qa.testCases.HomePageTest.gotoContactUsPage" finished-at="2019-07-29T18:25:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- gotoCartPage -->
+        <test-method status="PASS" signature="mouseHoverAndClickOnTopsButton()[pri:0, instance:com.qa.testCases.HomePageTest@548e7350]" name="mouseHoverAndClickOnTopsButton" duration-ms="7612" started-at="2019-07-29T18:25:34Z" depends-on-methods="com.qa.testCases.HomePageTest.gotoCartPage" finished-at="2019-07-29T18:25:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mouseHoverAndClickOnTopsButton -->
+        <test-method status="PASS" signature="mouseHoverAndClickOnDressesButton()[pri:0, instance:com.qa.testCases.HomePageTest@548e7350]" name="mouseHoverAndClickOnDressesButton" duration-ms="7495" started-at="2019-07-29T18:25:41Z" depends-on-methods="com.qa.testCases.HomePageTest.mouseHoverAndClickOnTopsButton" finished-at="2019-07-29T18:25:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mouseHoverAndClickOnDressesButton -->
+        <test-method status="PASS" signature="mouseHoverAndClickOnCasualDresses()[pri:0, instance:com.qa.testCases.HomePageTest@548e7350]" name="mouseHoverAndClickOnCasualDresses" duration-ms="9227" started-at="2019-07-29T18:25:49Z" depends-on-methods="com.qa.testCases.HomePageTest.mouseHoverAndClickOnDressesButton" finished-at="2019-07-29T18:25:58Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mouseHoverAndClickOnCasualDresses -->
+        <test-method status="PASS" signature="mouseHoverAndClickOnEveningDresses()[pri:0, instance:com.qa.testCases.HomePageTest@548e7350]" name="mouseHoverAndClickOnEveningDresses" duration-ms="5728" started-at="2019-07-29T18:25:58Z" depends-on-methods="com.qa.testCases.HomePageTest.mouseHoverAndClickOnCasualDresses" finished-at="2019-07-29T18:26:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mouseHoverAndClickOnEveningDresses -->
+        <test-method status="PASS" signature="mouseHoverAndClickOnSummerDresses()[pri:0, instance:com.qa.testCases.HomePageTest@548e7350]" name="mouseHoverAndClickOnSummerDresses" duration-ms="6150" started-at="2019-07-29T18:26:04Z" depends-on-methods="com.qa.testCases.HomePageTest.mouseHoverAndClickOnEveningDresses" finished-at="2019-07-29T18:26:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- mouseHoverAndClickOnSummerDresses -->
+        <test-method status="PASS" signature="clickOnTshirtsTab()[pri:0, instance:com.qa.testCases.HomePageTest@548e7350]" name="clickOnTshirtsTab" duration-ms="5420" started-at="2019-07-29T18:26:10Z" depends-on-methods="com.qa.testCases.HomePageTest.mouseHoverAndClickOnSummerDresses" finished-at="2019-07-29T18:26:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickOnTshirtsTab -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testCases.HomePageTest@548e7350]" name="tearDown" is-config="true" duration-ms="866" started-at="2019-07-29T18:26:15Z" finished-at="2019-07-29T18:26:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.testCases.HomePageTest -->
+    </test> <!-- Test ran in Chrome Browser -->
   </suite> <!-- Suite -->
 </testng-results>

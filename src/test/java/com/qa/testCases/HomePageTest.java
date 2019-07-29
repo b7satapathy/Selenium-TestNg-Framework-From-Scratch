@@ -2,107 +2,94 @@ package com.qa.testCases;
 
 import static org.testng.Assert.assertEquals;
 
-import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-import com.qa.base.TestBase;
+import com.qa.baseTest.BaseTest;
 import com.qa.pages.HomePage;
-import com.qa.utility.Screenshot;
 
-@Listeners(Screenshot.class)
-public class HomePageTest extends TestBase{
+public class HomePageTest extends BaseTest{
 
-	public HomePageTest() {
-		super();
-	}
 	
 	HomePage home;
 	
 	@Test(alwaysRun=true)
 	public void goToSignInPage() {
-		home= new HomePage();
-		assertEquals(home.clickOnSignInButton(), "Login - My Store");
-		assertEquals(home.returnToHomePage(), "My Store");
+		String LoginPageTitle=page.getInstance(HomePage.class).clickOnSignInButton();
+		String HomePageTitle=page.getInstance(HomePage.class).returnToHomePage();
+		assertEquals(LoginPageTitle, "Login - My Store");
+		assertEquals(HomePageTitle, "My Store");
 	}
 	
 	@Test(dependsOnMethods= {"goToSignInPage"},alwaysRun=true)
 	public void searchAText() {
-		home= new HomePage();
-		assertEquals(home.enterTextInSearchbar(), "Search - My Store");
-		assertEquals(home.returnToHomePage(), "My Store");
+		String SearchPageTitle=page.getInstance(HomePage.class).enterTextInSearchbar();
+		String HomePageTitle=page.getInstance(HomePage.class).returnToHomePage();
+		assertEquals(SearchPageTitle, "Search - My Store");
+		assertEquals(HomePageTitle, "My Store");
 	}
 	
 	@Test(dependsOnMethods= {"searchAText"}, alwaysRun=true)
 	public void gotoContactUsPage() {
-		home= new HomePage();
-		assertEquals(home.clickOnContactUsButton(), "Contact us - My Store");
-		assertEquals(home.returnToHomePage(), "My Store");
+		String ContactPageTitle=page.getInstance(HomePage.class).clickOnContactUsButton();
+		String HomePageTitle=page.getInstance(HomePage.class).returnToHomePage();
+		assertEquals(ContactPageTitle, "Contact us - My Store");
+		assertEquals(HomePageTitle, "My Store");
 	}
 	
 	@Test(dependsOnMethods= {"gotoContactUsPage"}, alwaysRun=true)
 	public void gotoCartPage() {
-		home= new HomePage();
-		assertEquals(home.clickOnCartButton(), "Order - My Store");
-		assertEquals(home.returnToHomePage(), "My Store");
+		String OrdertPageTitle=page.getInstance(HomePage.class).clickOnCartButton();
+		String HomePageTitle=page.getInstance(HomePage.class).returnToHomePage();
+		assertEquals(OrdertPageTitle, "Order - My Store");
+		assertEquals(HomePageTitle, "My Store");
 	}
 	
 	@Test(dependsOnMethods= {"gotoCartPage"}, alwaysRun=true)
 	public void mouseHoverAndClickOnTopsButton() {
-		home= new HomePage();
-		assertEquals(home.mouseHoverToWomenTabAndClickOnTops(), "Tops - My Store");
-		assertEquals(home.returnToHomePage(), "My Store");
+		String TopsPageTitle=page.getInstance(HomePage.class).mouseHoverToWomenTabAndClickOnTops();
+		String HomePageTitle=page.getInstance(HomePage.class).returnToHomePage();
+		assertEquals(TopsPageTitle, "Tops - My Store");
+		assertEquals(HomePageTitle, "My Store");
 	}
 	
 	@Test(dependsOnMethods= {"mouseHoverAndClickOnTopsButton"}, alwaysRun=true)
 	public void mouseHoverAndClickOnDressesButton() {
-		home= new HomePage();
-		assertEquals(home.mouseHoverToWomenTabAndClickOnDresses(), "Dresses - My Store");
-		assertEquals(home.returnToHomePage(), "My Store");
+		String DressesPageTitle=page.getInstance(HomePage.class).mouseHoverToWomenTabAndClickOnDresses();
+		String HomePageTitle=page.getInstance(HomePage.class).returnToHomePage();
+		assertEquals(DressesPageTitle, "Dresses - My Store");
+		assertEquals(HomePageTitle, "My Store");
 	}
 	
 	@Test(dependsOnMethods= {"mouseHoverAndClickOnDressesButton"}, alwaysRun=true)
 	public void mouseHoverAndClickOnCasualDresses() {
-		home= new HomePage();
-		assertEquals(home.mouseHoverToDressesTabAndClickOnCasualDresses(), "Casual Dresses - My Store");
-		assertEquals(home.returnToHomePage(), "My Store");
+		String CasualDressesPageTitle=page.getInstance(HomePage.class).mouseHoverToDressesTabAndClickOnCasualDresses();
+		String HomePageTitle=page.getInstance(HomePage.class).returnToHomePage();
+		assertEquals(CasualDressesPageTitle, "Casual Dresses - My Store");
+		assertEquals(HomePageTitle, "My Store");
 	}
 	
 	@Test(dependsOnMethods= {"mouseHoverAndClickOnCasualDresses"}, alwaysRun=true)
 	public void mouseHoverAndClickOnEveningDresses() {
-		home= new HomePage();
-		assertEquals(home.mouseHoverToDressesTabAndClickOnEveningDresses(), "Evening Dresses - My Store");
-		assertEquals(home.returnToHomePage(), "My Store");
+		String EveningDressesPageTitle=page.getInstance(HomePage.class).mouseHoverToDressesTabAndClickOnEveningDresses();
+		String HomePageTitle=page.getInstance(HomePage.class).returnToHomePage();
+		assertEquals(EveningDressesPageTitle, "Evening Dresses - My Store");
+		assertEquals(HomePageTitle, "My Store");
 	}
 	
 	@Test(dependsOnMethods= {"mouseHoverAndClickOnEveningDresses"}, alwaysRun=true)
 	public void mouseHoverAndClickOnSummerDresses() {
-		home= new HomePage();
-		assertEquals(home.mouseHoverToDressesTabAndClickOnSummerDresses(), "Summer Dresses - My Store");
-		assertEquals(home.returnToHomePage(), "My Store");
+		String SummerDressesPageTitle=page.getInstance(HomePage.class).mouseHoverToDressesTabAndClickOnSummerDresses();
+		String HomePageTitle=page.getInstance(HomePage.class).returnToHomePage();
+		assertEquals(SummerDressesPageTitle, "Summer Dresses - My Store");
+		assertEquals(HomePageTitle, "My Store");
 	}
 	
 	@Test(dependsOnMethods= {"mouseHoverAndClickOnSummerDresses"}, alwaysRun=true)
 	public void clickOnTshirtsTab() {
-		home= new HomePage();
-		assertEquals(home.ClickOntShirtsTab(), "T-shirts - My Store");
-		assertEquals(home.returnToHomePage(), "My Store");
+		String TshirtsPageTitle=page.getInstance(HomePage.class).ClickOntShirtsTab();
+		String HomePageTitle=page.getInstance(HomePage.class).returnToHomePage();
+		assertEquals(TshirtsPageTitle, "T-shirts - My Store");
+		assertEquals(HomePageTitle, "My Store");
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 	
 }

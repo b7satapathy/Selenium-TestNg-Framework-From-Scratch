@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <listeners>
-    <listener class-name="com.qa.analyzer.Transformer"/>
-    <listener class-name="com.qa.utility.ExtentReport"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)">
+<suite thread-count="2" guice-stage="DEVELOPMENT" verbose="3" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="2" verbose="3" name="Test ran in Firefox Browser(failed)" parallel="methods">
+    <parameter name="browser" value="firefox"/>
     <classes>
       <class name="com.qa.testCases.HomePageTest">
         <methods>
           <include name="mouseHoverAndClickOnDressesButton"/>
+          <include name="mouseHoverAndClickOnCasualDresses"/>
           <include name="searchAText"/>
           <include name="gotoCartPage"/>
-          <include name="initializeBrowser"/>
           <include name="goToSignInPage"/>
           <include name="mouseHoverAndClickOnTopsButton"/>
+          <include name="mouseHoverAndClickOnEveningDresses"/>
+          <include name="mouseHoverAndClickOnSummerDresses"/>
+          <include name="setUpTest"/>
           <include name="tearDown"/>
           <include name="gotoContactUsPage"/>
         </methods>
       </class> <!-- com.qa.testCases.HomePageTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test ran in Firefox Browser(failed) -->
 </suite> <!-- Failed suite [Suite] -->

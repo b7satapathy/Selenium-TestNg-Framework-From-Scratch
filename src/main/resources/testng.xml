@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<!-- <suite thread-count="2" name="Suite" parallel="tests" verbose="3" > -->
+	
+	<suite name="Suite" >
+
+<!-- 	<listeners> -->
+<!-- 		<listener class-name="com.qa.analyzer.Transformer"></listener> -->
+<!-- 		<listener class-name="com.qa.utility.ExtentReport"></listener> -->
+<!-- 	</listeners> -->
+
+
+
+<!-- 	<test name="Test ran in Chrome Browser"  parallel="methods" thread-count="5"> -->
+	
+	<test name="Test ran in Chrome Browser" >
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="com.qa.testCases.HomePageTest"></class>
+		</classes>
+	</test>
+
+
+
+<!-- 	<test name="Test ran in Firefox Browser"  parallel="methods" thread-count="5"> -->
+<!-- 	<test name="Test ran in Firefox Browser" > -->
+<!-- 		<parameter name="browser" value="firefox" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="com.qa.testCases.HomePageTest"></class> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+
+
+</suite> 
