@@ -109,10 +109,10 @@
    </dependency>
     
     <dependency>
-	<groupId>io.github.bonigarcia</groupId>
-	<artifactId>webdrivermanager</artifactId>
-	<version>3.6.1</version>
-    </dependency>
+    <groupId>io.github.bonigarcia</groupId>
+    <artifactId>webdrivermanager</artifactId>
+    <version>4.2.2</version>
+</dependency>
 <!-- WebDriverManager -->
 <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
     

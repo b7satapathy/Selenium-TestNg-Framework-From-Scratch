@@ -16,7 +16,7 @@
 <!-- 	<test name="Test ran in Chrome Browser"  parallel="methods" thread-count="5"> -->
 	
 	<test name="Test ran in Chrome Browser" >
-		<parameter name="browser" value="chrome" />
+		<!-- <parameter name="browser" value="chrome" /> -->
 		<classes>
 			<class name="com.qa.testCases.HomePageTest"></class>
 		</classes>

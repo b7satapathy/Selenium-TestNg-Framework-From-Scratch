@@ -42,17 +42,10 @@ public class BaseTest {
 	}
 	
 	@BeforeTest
-	@Parameters(value= {"browser"})
+	//@Parameters(value= {"browser"})
 	public void setUpTest(String browser) {
-		if(browser.equals("chrome")) {
-		    WebDriverManager.chromedriver().setup();
-		    driver = new ChromeDriver();
-		}else if(browser.equals("firefox")) {
-		    WebDriverManager.firefoxdriver().setup();
-		    driver = new FirefoxDriver();
-		}else {
-			System.out.println("No Brwoser is defined in testng.xml file");
-		}
+		WebDriverManager.chromedriver().setup();
+		driver = new ChromeDriver();
 	
 	
 	driver.manage().window().maximize();
